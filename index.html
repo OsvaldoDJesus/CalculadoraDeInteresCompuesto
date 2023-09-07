@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Concert+One&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttonstyle.css">
+    <title>Interés Compuesto</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Calcula el interés compuesto</h1>
+    </div>
+    
+    <section class="cuerpo-calc">
+        <div id="form">
+            <label class="info" for="capital">Capital</label>
+            <div class="input">
+                <input type="number" name="capital" id="capital"> 
+            </div>
+            <br>
+            <label class="info" for="tasa_interes">Tasa de interés %</label>
+            <div class="input">
+                <input type="number" name="tasa_interes" id="tasa_interes">
+            </div>
+            <br>
+            <label class="info" for="tiempo">Tiempo</label>
+            <div class="input">
+                <input type="number" name="tiempo" id="tiempo">
+            </div>
+            <div class="capitalizacion">
+                <p class="subtitle">Tipo de tasa de interés</p> 
+                <div>
+                    <h4>Si seleccionas anual, debes colocar el tiempo de la deuda o inversión en años. Si seleccionas trimestral, en meses.</h4>
+                </div>
+                <div class="capital">
+                    <label class="capital-label">Seleccione la capitalización:</label>
+                    <label class="radio-label" for="anual">
+                        <input type="radio" name="capitalizacion" id="anual" value="anual">
+                        <span class="radio-custom"></span>
+                        Anual
+                    </label>
+                    <label class="radio-label" for="trimestral">
+                        <input type="radio" name="capitalizacion" id="trimestral" value="trimestral">
+                        <span class="radio-custom"></span>
+                        Trimestral
+                    </label>
+                </div>
+            </div>
+            <br>
+            <div class="btn">
+                <button class="button-89" id="calcular">Calcular</button>
+            </div>
+            <br>
+            <div>
+                <label>Resultado:</label>
+                <p id="total"></p>
+                <label>Interés:</label>
+                <p id="interes"></p>
+            </div>
+            <script src="./codeInteresCompuesto.js"></script>
+        </div>
+    </section>
+</body>
+</html>
